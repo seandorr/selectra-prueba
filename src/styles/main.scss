@@ -1,0 +1,13 @@
+@import "./reset";
+@import "./mediaQueries";
+@import "./colors";
+@import "./baseStyles";
+
+body {
+  font-family: "Menlo", -apple-system, sans-serif;
+}
+
+h1 {
+  font-size: 36px;
+  font-weight: 400;
+}
