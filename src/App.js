@@ -1,7 +1,8 @@
 import React from "react";
+import "./styles/main.scss";
 
 const App = () => {
-  return <div>app</div>;
+  return <h1>una prueba</h1>;
 };
 
 export default App;
