@@ -8,6 +8,16 @@ body {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 400;
+}
+
+p {
+  font-size: 14px;
+}
+
+.main-container {
+  max-width: $desktop;
+  margin: 0 auto;
+  display: block;
 }
