@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
+import Contacts from "./components/Contacts";
 import "./styles/main.scss";
 
 const App = () => {
@@ -11,9 +12,11 @@ const App = () => {
     });
   }, []);
 
-  console.log(data);
-
-  return <h1>una prueba</h1>;
+  return (
+    <div className="main-container">
+      <Contacts data={data} />
+    </div>
+  );
 };
 
 export default App;
