@@ -21,3 +21,17 @@ p {
   margin: 0 auto;
   display: block;
 }
+
+.button {
+  text-align: center;
+  padding: 5px 10px;
+  border: 2px solid $dark-color;
+  border-radius: $border-radius;
+  background-color: transparent;
+  transition: 0.3s ease-in-out;
+
+  &:hover {
+    color: $light-color;
+    background-color: $dark-color;
+  }
+}
