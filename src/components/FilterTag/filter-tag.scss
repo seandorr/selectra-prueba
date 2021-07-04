@@ -1,0 +1,17 @@
+@import "../../styles/colors";
+@import "../../styles/baseStyles";
+
+.filter-tag {
+  color: $light-color;
+  margin: 10px 0;
+  padding: 10px;
+  background-color: $dark-color;
+  border-radius: $border-radius;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .filter-tag__close-icon {
+    margin-left: 5px;
+  }
+}
