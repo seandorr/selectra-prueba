@@ -24,7 +24,7 @@ const ContactCard = ({ contact }) => {
         <Idcard />
       </div>
       <div className="card-info__name center">
-        <h1 className="card-info__item">{name}</h1>
+        <h2 className="card-info__item">{name}</h2>
       </div>
       <div className="card-info__email center">
         <p className="card-info__item">{email}</p>
