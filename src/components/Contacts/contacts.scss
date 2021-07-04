@@ -1,0 +1,75 @@
+@import "../../styles/colors";
+@import "../../styles/baseStyles";
+@import "../../styles/mediaQueries";
+
+.contacts__container {
+  margin: 25px;
+
+  h1 {
+    margin-bottom: 10px;
+    @include tablet {
+      margin-bottom: 0;
+    }
+  }
+
+  .flex {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @include tablet {
+      align-items: center;
+      flex-direction: row;
+    }
+  }
+
+  .filters__container {
+    border: 2px solid $dark-color;
+    border-radius: $border-radius;
+    display: flex;
+    align-items: center;
+
+    .select-filter__container {
+      position: relative;
+      padding: 5px 10px;
+
+      &::after {
+        content: "";
+        background-color: $dark-color;
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      select {
+        cursor: pointer;
+      }
+    }
+
+    .filter__input {
+      padding: 5px 10px;
+    }
+
+    .search-icon {
+      font-size: 18px;
+      padding: 0 10px;
+    }
+
+    input::placeholder {
+      color: $dark-color;
+    }
+  }
+
+  .filter-tag__container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    @include tablet {
+      justify-content: flex-end;
+    }
+  }
+}
