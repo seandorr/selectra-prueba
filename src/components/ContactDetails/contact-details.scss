@@ -1,21 +1,17 @@
 @import "../../styles/colors";
 @import "../../styles/mediaQueries";
+@import "../../styles/baseStyles";
 
 .contact-details__container {
   margin: 25px auto;
   max-width: $tablet;
   display: block;
 
-  .form-row {
+  .form-item {
     margin: 25px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto;
-
-    @include tablet {
-      grid-template-columns: 1fr 1fr;
-      grid-template-rows: auto;
-    }
   }
 
   .flex {
@@ -32,9 +28,8 @@
   }
 
   input {
-    padding-left: 10px;
-    min-width: 250px;
-    height: 30px;
+    padding: 15px;
     background-color: $dark-light-color;
+    border-radius: $border-radius;
   }
 }
