@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 import Idcard from "@ant-design/icons/IdcardOutlined";
 import ArrowBtn from "@ant-design/icons/RightCircleTwoTone";
 import "./contact-card.scss";
@@ -33,7 +34,9 @@ const ContactCard = ({ contact }) => {
         onMouseEnter={() => handleOnMouseEnter(id)}
         onMouseLeave={() => setHoveringOverIcon(false)}
       >
-        <ArrowBtn />
+        <Link to={name}>
+          <ArrowBtn />
+        </Link>
       </div>
     </div>
   );
