@@ -1,10 +1,11 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
 import SearchIcon from "@ant-design/icons/SearchOutlined";
-
 import ContactCard from "../ContactCard/ContactCard";
-import "./contacts.scss";
 import FilterTag from "../FilterTag/FilterTag";
+import Select from "../Select/Select";
+import { selectSortOptions } from "../../utils/constants/selectSortOptions";
+import "./contacts.scss";
 
 const Contacts = ({ data }) => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -28,23 +29,12 @@ const Contacts = ({ data }) => {
         <h1>Contacts</h1>
         <div className="filters__container">
           <div className="select-filter__container">
-            <select
-              name="filterType"
-              value={filterValue}
+            <Select
+              selectName="filterType"
+              selectValue={filterValue}
               onChange={handleFilter}
-            >
-              <option
-                value="placeholder"
-                className="placeholder"
-                defaultValue
-                disabled
-                hidden
-              >
-                Sort by
-              </option>
-              <option value="name">Name</option>
-              <option value="email">Email</option>
-            </select>
+              options={selectSortOptions}
+            />
           </div>
           <input
             className="filter__input"
