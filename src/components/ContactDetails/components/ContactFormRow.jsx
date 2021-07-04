@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 
 const ContactFormRow = ({ labelText, inputName, defaultInputValue }) => {
   return (
-    <div className="form-row">
+    <div className="form-item">
       <label>{labelText}:</label>
       <input name={inputName} type="text" defaultValue={defaultInputValue} />
     </div>

@@ -20,7 +20,7 @@
     grid-template-areas: "icon name email button";
   }
 
-  &.active-hover {
+  &:hover {
     box-shadow: 0 2px 6px 0 rgba($dark-color, 0.3);
   }
 

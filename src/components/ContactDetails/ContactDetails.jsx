@@ -1,7 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
-import "./contact-details.scss";
 import ContactFormRow from "./components/ContactFormRow";
+import "./contact-details.scss";
 
 const ContactDetails = ({ contact }) => {
   const { name, email, username, address } = contact;
